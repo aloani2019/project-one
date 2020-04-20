@@ -81,7 +81,7 @@ spring:
 
 server:
   port: 8080
-  msg: 'hello dev'
+  msg: 'hello qa'
 
 # ===================================================================
 # JHipster specific properties

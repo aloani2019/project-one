@@ -94,5 +94,9 @@ public class ProjectoneApp implements InitializingBean {
             serverPort,
             contextPath,
             env.getActiveProfiles());
+
+        String message = env.getProperty("server.msg");
+
+        log.info("\n--------{}------------\n\t" , message);
     }
 }
