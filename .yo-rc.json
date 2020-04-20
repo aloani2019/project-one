@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.abdu.experimentals"
+    },
+    "jhipsterVersion": "6.3.1",
+    "applicationType": "monolith",
+    "baseName": "projectone",
+    "packageName": "com.abdu.experimentals",
+    "packageFolder": "com/abdu/experimentals",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjNkZGMwMDhjOGU5NGE5YTQxMTU2NDYyMjkyMWIwZDMzZDdlMWIyZDQwYjg3YjRiZjQzZTJjZTdkNzBmNDUxMjAyYjI4NmFmOTdhMzQwN2JhNTMxYTg4MmFkMDJiZWQ2ZDg2NDNiNmI1YTE3NjllY2RlOTc4MGMzZmI0OTQ0M2U=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}

@@ -1,0 +1,22 @@
+version: '2'
+services:
+  projectone-app:
+    image: projectone
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://projectone-mysql:3306/projectone?useUnicode=true&characterEncoding=utf8&useSSL=false
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+      - SPRING_DATA_JEST_URI=http://projectone-elasticsearch:9200
+      - SPRING_ELASTICSEARCH_REST_URIS=http://projectone-elasticsearch:9200
+    ports:
+      - 8080:8080
+  projectone-mysql:
+    extends:
+      file: mysql.yml
+      service: projectone-mysql
+  projectone-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: projectone-elasticsearch
